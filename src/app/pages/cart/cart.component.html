@@ -3,4 +3,5 @@
     @for(cartitem of cartService.cart();track cartitem.id){
         <app-cart-item [item]="cartitem"/>
     }
+    <app-order-summary/>
 </div>
