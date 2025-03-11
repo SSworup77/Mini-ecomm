@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Product } from '../../models/products-model';
 import { ProductsCardComponent } from '../products-card/products-card.component';
+import { PaymentOptionsComponent } from './payment-options/payment-options.component';
 
 @Component({
   selector: 'app-products-list',
-  imports: [ProductsCardComponent],
+  imports: [ProductsCardComponent,PaymentOptionsComponent],
   templateUrl: './products-list.component.html',
   styleUrl: './products-list.component.scss'
 })
